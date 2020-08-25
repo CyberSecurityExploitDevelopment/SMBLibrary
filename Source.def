@@ -1,0 +1,58 @@
+LIBRARY		SMBLibrary.dll
+
+
+EXPORTS
+		MainExploitEntry							@1
+		
+		bwsalloc
+		bwsfree
+		bwscat
+		bwsnew
+		bwsdelete
+		bwsallocateandcopy
+
+		__memcmp
+		find_memory_pattern
+		update_smb_info		
+		csprng
+		random
+
+		FindLeakedTrans2DispatchTable
+		GetDoublePulsarStatusCode
+		GetDoublePulsarOpCode
+		GenerateDoublePulsarOpcodePacket
+		GetDoublePulsarXorKey
+		GetOOBWriteAddress
+		GenerateDoublePulsarTrans2SessionSetupParameters
+		PadDoPuPayloadToProperSize
+		GetAllOOBReadAddressesFromMultiRequest
+		FindLeakedDataFragTag
+		FindLeadedDataLStrTag
+
+		InitString
+		FreeString
+		InitUnicodeString
+		FreeUnicodeString
+		ConvertStringToUnicode
+		ConvertUnicodeToString
+		DumpHex
+
+		TargetConnect
+		SendData
+		RecvData
+		CloseAndClearSocket
+
+		negotiate_request_packet
+		session_setup_packet
+		tree_connect_packet
+
+		trans2_session_setup_packet
+		trans2_session_setup_dopu_kill
+		trans2_session_setup_dopu_ping
+		trans2_session_setup_dopu_exec
+		tree_disconnect_packet
+		logoff_andx_packet
+
+		readfile
+
+
